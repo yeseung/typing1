@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Jua|Nanum+Myeongjo|Nanum+Pen+Script|Noto+Serif+KR|Song+Myung|Stylish|Yeon+Sung&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Black+Han+Sans|Lato|Lobster|Merriweather|Oswald|Shadows+Into+Light&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+  <title>타자연습</title>
+</head>
+
+<body>
+<div id="top">
+  <nav>
+    <p id="logo"><a href='/'>타자연습</a></p>
+    <button class="top_btn" id="init" onclick="init();">타자 연습 시작</button>
+  </nav>
+</div>
+<div class="input_form">
+  <p id="str"></p>
+  <input id="text_input" class="text_input" name="text_input" type="text" oninput="input(this.value);">
+</div>
+<div class="div_time">
+  <p id="time">경과시간 : 0초</p>
+  <p id="tasu">현재타수 : 0타</p>
+  <p id="highest_tasu">최고타수 : 0타</p>
+  <p class="jeonghwakdo">정확도 : </p><div id="jeonghwakdo">100%</div>
+</div>
+<div class="div_select" id="div_select1">
+  <strong class="list1">-></strong><button onclick="select(list1)">애국가</button><br>
+  <strong class="list2"></strong><button onclick="select(list2)">윤동주-서시</button><br>
+  <strong class="list3"></strong><button onclick="select(list3)">윤동주-별헤는밤</button><br>
+  <strong class="list4"></strong><button onclick="select(list4)">김소월-진달래꽃</button><br>
+  <button class="next_btn" onclick="$('#div_select1').hide();$('#div_select2').show();">→</button>
+  <p class="preview"></p>
+</div>
+<div class="div_select" id="div_select2">
+  <strong class="list5"></strong><button onclick="select(list5)">삼척고등학교 교가</button><br>
+  <strong class="list100"></strong><button onclick="select(list100)">추가 예정...</button><br>
+  <button class="back_btn" onclick="$('#div_select1').show();$('#div_select2').hide();">←</button>
+  <p class="preview"></p>
+</div>
+
+
+
+<script src="script.js"></script>
+</body></html>

@@ -1,0 +1,138 @@
+/**폰트
+
+국문폰트
+font-family: 'Stylish', sans-serif;
+font-family: 'Song Myung', serif;
+font-family: 'Jua', sans-serif;
+font-family: 'Yeon Sung', cursive;
+font-family: 'Nanum Pen Script', cursive;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Do Hyeon', sans-serif;
+font-family: 'Noto Serif KR', serif;
+영문폰트
+font-family: 'Lato', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Lobster', cursive;
+font-family: 'Black Han Sans', sans-serif;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Merriweather', serif;
+**/
+
+body {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+/* 네비게이션 바 */
+
+#top nav {
+    width: 100%;
+    height: 50px;
+    background-color: #FFFFCC;
+}
+
+#logo {
+    display: inline-block;
+    margin: 0;
+    margin-left: 25px;
+    margin-right: 25px;
+    line-height: 50px;
+}
+
+#logo a {
+    font-family: 'Jua', sans-serif;
+    color: white;
+    text-shadow: 0 2px black, 2px 0 black, 0 -1px black, -1px 0 black;
+    font-size: 25px;
+}
+
+#logo a:hover {
+    text-decoration: none;
+}
+
+.top_btn {
+    font-family: 'Noto Serif KR', serif;
+    font-weight: bold;
+    border: 0;
+    background-color: #F7F7F7;
+    box-shadow: 0 2px gray, 2px 0 gray;
+}
+
+/* 글자 입력 폼 */
+
+.input_form {
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 5%;
+}
+
+.text_input {
+    font-family: 'Noto Serif KR', serif;
+    width: 95%;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+#str {
+    font-family: 'Noto Serif KR', serif;
+    width: 95%;
+    margin: 0;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.str_ {
+    font-weight: 100;
+    font-size: 15.8px;
+}
+
+.div_time {
+    font-family: 'Noto Serif KR', serif;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+
+.time {
+    display: inline-block;
+}
+
+#jeonghwakdo {
+    text-align: center;
+    display: inline-block;
+    width: 75%;
+    height: 30px;
+    background-color: red;
+    color: white;
+    padding-left: 10px;
+}
+
+.jeonghwakdo {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+.div_select {
+    font-family: 'Noto Serif KR', serif;
+    text-align: center;
+}
+
+.div_select button {
+    font-family: 'Noto Serif KR', serif;
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 0;
+    background-color: #F7F7F7;
+    box-shadow: 0 2px gray, 2px 0 gray;
+}
+
+.preview {
+    margin: 10px;
+}
